@@ -22,3 +22,4 @@ In my case I needed to manually rename `USysRibbons_Table` back to `USysRibbons`
 - [Born's Tech and Windows World](https://borncity.com/win/2019/11/13/office-november-2019-updates-are-causing-access-error-3340/?unapproved=6359&moderation-hash=597d97fc3d9abf61a4a8c4940f25bbc1#comment-6359)
 - [administrator.de (German)](https://administrator.de/content/detail.php?id=514571&token=511#comment-1405456)
 - [Microsoft Forum: The CVE-2019-1402 updates (KB4484119, etc.) break Access 2010/2013/2016/365: Query '' is corrupt](https://social.msdn.microsoft.com/Forums/office/en-US/7e7f24cc-f1f3-43f8-a9a2-45b77812b211/the-cve20191402-updates-kb4484119-etc-break-access-201020132016365-query-is-corrupt?forum=accessdev)
+- [StackOverflow](https://stackoverflow.com/questions/58832269/getting-error-3340-query-is-corrupt-while-executing-queries-docmd-runsql)
