@@ -1,6 +1,8 @@
 # CurruptQueryAccessWorkaround
 The latest workaround for the "Query is corrupt" error introduced with CVE-2019-1402 in MS Access.
 
+There are other workarounds out there that need to be applied on an administrative level, e.g. by uninstalling the erroneous update. In contrast to those, the intention of the one provided here is to work by automatically altering the MDB/ACCDB content itself with as little work as possible.
+
 ### Instructions
 
 Use the `basWorkaround.bas` module to automatically implement Microsofts suggested workaround (using a query instead of a table). As a precaution, backup your database first.
