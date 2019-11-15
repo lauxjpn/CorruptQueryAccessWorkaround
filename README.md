@@ -1,4 +1,5 @@
-# CurruptQueryAccessWorkaround
+## CurruptQueryAccessWorkaround: Query '' is corrupt
+
 The latest workaround for the [Query is corrupt](https://support.office.com/en-us/article/access-error-query-is-corrupt-fad205a5-9fd4-49f1-be83-f21636caedec) error introduced with CVE-2019-1402 in MS Access.
 
 There are other workarounds out there that need to be applied on an administrative level, e.g. by uninstalling the erroneous update. In contrast to those, the intention of the one provided here is to work by automatically altering the MDB/ACCDB content itself with as little work as possible.
@@ -26,3 +27,7 @@ In my case I needed to manually rename `USysRibbons_Table` back to `USysRibbons`
 - [Microsoft Error and Workaround Description](https://support.office.com/en-us/article/access-error-query-is-corrupt-fad205a5-9fd4-49f1-be83-f21636caedec)
 - [Microsoft Forum: The CVE-2019-1402 updates (KB4484119, etc.) break Access 2010/2013/2016/365: Query '' is corrupt](https://social.msdn.microsoft.com/Forums/office/en-US/7e7f24cc-f1f3-43f8-a9a2-45b77812b211/the-cve20191402-updates-kb4484119-etc-break-access-201020132016365-query-is-corrupt?forum=accessdev)
 - [StackOverflow](https://stackoverflow.com/questions/58832269/getting-error-3340-query-is-corrupt-while-executing-queries-docmd-runsql)
+
+### Error message in other languages
+
+- German: Abfrage '' ist beschädigt
