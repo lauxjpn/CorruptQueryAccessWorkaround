@@ -7,7 +7,7 @@ There are other workarounds out there that need to be applied on an administrati
 
 Use the `basWorkaround.bas` module to automatically implement Microsofts suggested workaround (using a query instead of a table). As a precaution, backup your database first.
 
-Call `AddWorkaroundForCorruptedQueryIssue()` to appöy the workaround and `RemoveWorkaroundForCorruptedQueryIssue()` to remove it at any time.
+Call `AddWorkaroundForCorruptedQueryIssue()` to apply the workaround and `RemoveWorkaroundForCorruptedQueryIssue()` to remove it at any time.
 
 `AddWorkaroundForCorruptedQueryIssue()` will add the suffix `_Table` to all non-system tables, e.g. the table `IceCreams` would be renamed to `IceCreams_Table`.
 
@@ -15,9 +15,9 @@ It will also create a new query with the original table name, that will select a
 
 `RemoveWorkaroundForCorruptedQueryIssue()` does the reverse actions.
 
-I tested this with all kinds of tables, including external non-MDB tables (like SQL Server). But be aware, that using a query instead of a table can lead to non-optimized queries being executed against a backend database in specific cases, especially if your original queries that used the tables are either of poor quality or very complex.
+I tested this with all kinds of tables, including external non-MDB tables (like SQL Server). But be aware, that using a query instead of a table can lead to non-optimized statements being executed against a backend database in specific cases, especially if your original queries that used the tables are either of poor quality or very complex.
 
-In my case I needed to manually rename `USysRibbons_Table` back to `USysRibbons`, as I hadn't marked it as as system table.
+In my case I needed to manually rename `USysRibbons_Table` back to `USysRibbons`, as I hadn't marked it as a system table when I created it in the past.
 
 ### Futher information
 
