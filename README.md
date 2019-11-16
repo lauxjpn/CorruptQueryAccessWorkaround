@@ -16,7 +16,7 @@ It will also create a new query with the original table name, that will select a
 
 `RemoveWorkaroundForCorruptedQueryIssue()` does the reverse actions.
 
-I tested this with all kinds of tables, including external non-MDB tables (like SQL Server).
+I am using this workaround on large projects with 400+ tables of all kinds, including external non-MDB tables (like SQL Server).
 
 In my case I needed to manually rename `USysRibbons_Table` back to `USysRibbons`, as I hadn't marked it as a system table when I created it in the past.
 
@@ -24,6 +24,7 @@ Keep the following things in mind:
 
 - Using a query instead of a table can lead to non-optimized statements being executed against a backend database in specific cases, especially if your original queries that used the tables are either of poor quality or very complex.
 - The underlying table *must have* a primary key defined, or it will not be possible to update or insert rows.
+- It is possible (depending on your coding style) that this does not cover all your code references (e.g. explicitly using statements like `TableDefs!MyTableName` will require you to do some find and replace for those instances in your code/UI).
 
 ### Futher information
 
