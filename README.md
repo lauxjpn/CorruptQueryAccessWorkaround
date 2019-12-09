@@ -6,6 +6,8 @@ There are other workarounds out there that need to be applied on an administrati
 
 ### Instructions
 
+Make sure that the either the `Microsoft DAO 3.6 Object Library` (backward compatibility) or `Microsoft Office x.x Access Database Engine Object Library` reference is enabled under `VBA Editor -> Tools -> References` (see [#1](https://github.com/lauxjpn/CurruptQueryAccessWorkaround/issues/1) for further details).
+
 Use the `basWorkaround.bas` module to automatically implement Microsofts suggested workaround (using a query instead of a table). As a precaution, backup your database first.
 
 Call `AddWorkaroundForCorruptedQueryIssue()` to apply the workaround and `RemoveWorkaroundForCorruptedQueryIssue()` to remove it at any time.
