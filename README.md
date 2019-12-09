@@ -1,4 +1,4 @@
-## CurruptQueryAccessWorkaround: Query '' is corrupt
+## CorruptQueryAccessWorkaround: Query '' is corrupt
 
 The latest workaround for the [Query is corrupt](https://support.office.com/en-us/article/access-error-query-is-corrupt-fad205a5-9fd4-49f1-be83-f21636caedec) error introduced with CVE-2019-1402 in MS Access.
 
