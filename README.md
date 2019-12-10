@@ -4,6 +4,11 @@ The latest workaround for the [Query is corrupt](https://support.office.com/en-u
 
 There are other workarounds out there that need to be applied on an administrative level, e.g. by uninstalling the erroneous update. In contrast to those, the intention of the one provided here is to work by automatically altering the MDB/ACCDB content itself with as little work as possible.
 
+### Note
+
+Microsoft did release a fix for this issue on 2019-12-10 (patch day) that will by default be automatically installed via WSUS etc.
+This workaround should therefore be obsolete after the fix got applied and anybody who has used it can call the `RemoveWorkaroundForCorruptedQueryIssue()` function to restore the original application state.
+
 ### Instructions
 
 Make sure that either the `Microsoft DAO 3.6 Object Library` (backward compatibility) or `Microsoft Office x.x Access Database Engine Object Library` reference is enabled under `VBA Editor -> Tools -> References` (see [#1](https://github.com/lauxjpn/CurruptQueryAccessWorkaround/issues/1) for further details).
